@@ -20,7 +20,7 @@ This is a single resource app that uses a server side framework (Hapi), Mongoose
 * Httpie - command line only
 
 
-####Install dependencies
+#### Install dependencies
 ```
 npm install
 ```
@@ -28,12 +28,12 @@ npm install
 
 ## Setup
 
-###To run:
+### To run:
 
  You need to use mongod to run this application. See [mongod documentation](https://docs.mongodb.org/manual/reference/program/mongod/) for installation and use.
 
 
-####In the first terminal activate the mongod daemon to sync with the data directory in the project:
+#### In the first terminal activate the mongod daemon to sync with the data directory in the project:
 
 ```
 mongod --dbpath=./data
@@ -43,7 +43,7 @@ mongod --dbpath=./data
 
 
 
-####In the second terminal activate app through index:
+#### In the second terminal activate app through index:
 
 ```
 node index
@@ -53,10 +53,10 @@ node index
   <em>Make note of your port. When you start your server, the message will tell you what the port is.</em>
 
 
-####In a third terminal run your httpie REST commands to create content for your database:
+#### In a third terminal run your httpie REST commands to create content for your database:
 Use [httpie](https://github.com/jkbrzt/httpie)
 
-###POST
+### POST
 ```
 http POST localhost:5000/api/put name=Shirley instrument=violin actor='Karen Scott'
 ```
@@ -68,7 +68,7 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/pf_db')
 ```
   <em>And will add to the name, instrument and actor properties the values assigned.</em>
 
-###PUT
+### PUT
 ```
 http PUT localhost:5000/api/put/{pfId} name=Shirley instrument=zither actor='Karen Scott'
 
@@ -76,14 +76,14 @@ http PUT localhost:5000/api/put/{pfId} name=Shirley instrument=zither actor='Kar
 
 ```
 
-###GET
+### GET
 Get all Partridge family members
 
 ```
 http GET localhost:5000/api/pf
 ```
 
-###DELETE
+### DELETE
 Delete family member from database by by finding their unique mongo _id and it adding to /api/delete/<id>
 
 ```
