@@ -1,4 +1,4 @@
-For complete use and install instructions please see: https://wordpress.com/post/kmskelton.wordpress.com/124 
+For complete use and install instructions please see: https://kmskelton.wordpress.com/2016/04/27/cmon-get-hapi-and-mongo/
 
 ### The following is copied from https://github.com/Hapi-appy/hapi_app
 ## Hapi-appi
